@@ -1,0 +1,16 @@
+.DS_Store
+*~
+ssdt?.dsl
+dsdt.dsl
+patched/ssdt*.dsl
+patched/dsdt.dsl
+build/*.aml
+build/*.kext
+unpatched/*
+!unpatched/readme.txt
+tools/*
+config.plist.smbios
+config.plist.local
+backup/*
+ioreg/*
+kext/*
