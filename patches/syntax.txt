@@ -1,4 +1,2 @@
-# _HID name fix
-into_all all code_regex (Name\s\(_HID,\s"ABCDEFGH") replace_matched begin Name (_HID, EisaId ("PNP0C15") end;
 # Fix the Min/Max/Len/Gran are all zero error
 into device label SIO1 code_regex 0x00(,\s+//\s+L) replaceall_matched begin 0x01%1 end;

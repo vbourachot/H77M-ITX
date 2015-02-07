@@ -28,7 +28,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
+		<string>Yosemite</string>
 		<key>NeverHibernate</key>
 		<true/>
 	</dict>

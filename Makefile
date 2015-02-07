@@ -54,11 +54,13 @@ patch:
 	$(PATCHMATIC) $(PATCHED)/dsdt.dsl $(LAPTOPGIT)/system/system_IRQ.txt $(PATCHED)/dsdt.dsl
 	$(PATCHMATIC) $(PATCHED)/dsdt.dsl $(LAPTOPGIT)/system/system_WAK1.txt $(PATCHED)/dsdt.dsl
 	$(PATCHMATIC) $(PATCHED)/dsdt.dsl $(LAPTOPGIT)/system/system_RTC.txt $(PATCHED)/dsdt.dsl
-	$(PATCHMATIC) $(PATCHED)/dsdt.dsl $(LAPTOPGIT)/usb/usb_7-series-id.txt $(PATCHED)/dsdt.dsl
+	$(PATCHMATIC) $(PATCHED)/dsdt.dsl $(LAPTOPGIT)/usb/usb_7-series.txt $(PATCHED)/dsdt.dsl
 	$(PATCHMATIC) $(PATCHED)/dsdt.dsl $(LAPTOPGIT)/system/system_SMBUS.txt $(PATCHED)/dsdt.dsl
 
+	$(PATCHMATIC) $(PATCHED)/dsdt.dsl patches/syntax.txt $(PATCHED)/dsdt.dsl
+
 	# Toleda's patches for syntax/audio
-	$(PATCHMATIC) $(PATCHED)/dsdt.dsl patches/ib1-ami_efi_clean_compile.txt $(PATCHED)/dsdt.dsl
+#	$(PATCHMATIC) $(PATCHED)/dsdt.dsl patches/ib1-ami_efi_clean_compile.txt $(PATCHED)/dsdt.dsl
 	# For HD4K as primary GPU - enables HDMI audio
 #	$(PATCHMATIC) $(PATCHED)/dsdt.dsl patches/ib3-hdmi_audio_ami_efi_hd4000-3.txt $(PATCHED)/dsdt.dsl
 	# For PCIE as primary GPU
